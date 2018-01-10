@@ -33,14 +33,14 @@ def sign_up():
         user_error = "Username must be between 3 and 20 characters long and may not contain spaces."
         user = ""
 
-    if len(email)>0:
+    if len(em)>0:
         if "@" not in em or "." not in em or " " in em or len(em) <3 or len(em) >20:
             em_error = "Not a valid email address."
             em = ""
 
     if len(pw) <3 or len(pw) > 20 or " " in pw:
         pw_error = "Password must be between 3 and 20 characters long and may not contain spaces."
-        
+
     if pw != validpw:
         vpw_error = "Password entries do not match."
 
