@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,20 +9,20 @@
 
         <form action="/" method="POST">
             <label for="username"> Username:</label>
-            <input id="username" type="text" name="username" required/>
-            <p class = "error"> {{username_error}} </p>
+            <input id="username" type="text" name="username" value = "{{user}}" required/>
+            <p class = "error"> {{user_error}} </p>
             <br>
             <label for="password"> Password:</label>
             <input id="password" type="password" name="password" required/>
-            <p class = "error"> {{password_error}} </p>
+            <p class = "error"> {{pw_error}} </p>
             <br>
             <label for="verify_password"> Verify Password:</label>
             <input id="verify_password" type="password" name="verify_password" required/>
-            <p class = "error"> {{verify_password_error}} </p>
+            <p class = "error"> {{vpw_error}} </p>
             <br>
             <label for="email"> Email (Optional):</label>
-            <input id="email" type="text" name="email"/>
-            <p class = "error"> {{email_error}} </p>
+            <input id="email" type="text" name="email" value = "{{em}}"/>
+            <p class = "error"> {{em_error}} </p>
             <br>
             <input type="submit" value="Submit"/>
         </form>
